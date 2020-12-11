@@ -77,24 +77,37 @@
                 temp += "<td>" + u.id + "</td>";
                 temp += "<td>" + u.title + "</td>";
            if(!u.completed)
-                  
-            enable="enabled"
-                                                            
-            temp += "<td>" + "<input type="+"checkbox"+" "+enable+">"+ "</td>";
-            
-          
-              })
-           
-              document.getElementById("data").innerHTML = temp;
-              
-            }
-           
-           
-            });
+    enable="enabled"
+else
+    enable="enabled"
+                   
+temp += "<td>" + "<input id="+"cb1"+" type="+"checkbox"+" "+enable+" onclick="+"check()"+">"+ "</td>";
+
+   
+ })
+}  
+document.getElementById("data").innerHTML = temp;
+
+document.getElementsById('cb1').cl
+}
+   
+ 
+    
+)
+    
+}
+    
+)
+function check(){
+    var check=document.querySelectorAll('input[type="checkbox"]:checked').length;
+   if(check==5){
+      alert(" Congrats,5 Tasks have been Successfully Completed ") 
+    document.getElementsByTagName('input').disable=true;
+   }
 
             }
           
-        )
+        
       
     
     
